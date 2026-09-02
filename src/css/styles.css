@@ -31,6 +31,11 @@ body {
             }
         }
     }
+&.css {
+    background: linear-gradient(46deg, #000000,#663399);
+    background-attachment: fixed;
+    
+}
     &.emmet {
         background:linear-gradient(rgb(80, 112, 31),rgb(36, 35, 35));
         section {
@@ -58,8 +63,6 @@ body {
                 margin: 0;
             }
         }
-
-
     }
     &.html {
         background: linear-gradient(#e44d26,rgb(61, 29, 29)) rgb(88, 5, 75);
