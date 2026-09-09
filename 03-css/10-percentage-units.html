@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-percentage-units</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        main {
+            width: 100%;
+            section.percentage {
+                margin: 0 auto;
+                width: 80%;
+                div.parent {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 50vh;
+                        font-size: 3rem;
+                        &.child01 {
+                            background-color: rgb(19, 134, 201);
+                            width: 70%;
+                        }
+                        &.child02 {
+                            background-color:  rgb(135, 163, 10);
+                            width: 30%;
+                    }
+                }
+            }
+        }
+    }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>10-percentage-units</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>Las unidades de porcentaje en CSS son aquellas que se basan en el valor de otra medida para calcular su valor.</h3>
+        </header>
+        <section Class="percentage">
+            <h2 class="subtitle">Ejemplo:</h2>
+            <div class="parent">
+                <div class="child01">70%</div>
+                <div class="child02">30%</div>
+            </div>
+        </section>
+    </main>
+</body>

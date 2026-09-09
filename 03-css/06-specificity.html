@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01</title>
+    <title>06-specificity</title>
     <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        button { /*specificity 001*/
+            border: none;
+            border-radius: 0.2rem;
+            /*important;*/
+            background-color: rgb(234, 0, 255);
+            padding: 0.4rem;
+            font-size: 1rem;
+            display: flex;
+            margin: 2rem;
+        }
+        section button.btn {/*specificity 012*/
+            background-color: violet;
+        }
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -14,12 +29,13 @@
     </nav>
     <main>
         <header class="mainmenu internal">
-            <h1>00-template</h1>
+            <h1>06-specificity</h1>
             <img src="../src/imgs/logo-css.png" alt="css">
-            <h3>Descripcion</h3>
+            <h3>Es la puntuación o jerarquía que determina qué declaración de estilo se aplica finalmente a un elemento.</h3>
         </header>
         <section>
-            <h2 class="subtitle"></h2>
+            <h2 class="subtitle">Example: </h2>
+            <button class="btn">Este es un boton: </button>
         </section>
     </main>
 </body>
