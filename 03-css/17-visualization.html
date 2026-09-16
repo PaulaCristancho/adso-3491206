@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-visualization</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        .block {
+            display: block;
+            background: lightblue;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .inline {
+            display: inline;
+            background: lightgreen;
+            padding: 10px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .flex {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .flex div {
+            background: orange;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .grid div {
+            background: violet;
+            padding: 20px;
+        }
+
+        .visible {
+            visibility: visible;
+            background: lightgreen;
+            padding: 15px;
+        }
+
+        .hidden {
+            visibility: hidden;
+            background: red;
+            padding: 15px;
+        }
+
+        .overflow {
+            width: 200px;
+            height: 50px;
+            overflow: auto;
+            background: lightgray;
+            padding: 10px;
+        }
+
+        .caja {
+            width: 150px;
+            height: 100px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .azul {
+            background: blue;
+            z-index: 1;
+            left: 30px;
+        }
+
+        .roja {
+            background: red;
+            z-index: 2;
+            top: -50px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>17-visualization</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>define cómo se muestran los elementos en la página mediante propiedades como display que controlan el diseño y el flujo de los cuadros de contenido</h3>
+            <ul>
+                <li>Display: block|inline|none|flex|grid</li>
+                <li>Visibility: visible|hidden</li>
+                <li>Overflow: visible|hidden|scroll|auto</li>
+                <li>Z-Index: 1...n</li>
+            </ul>
+        </header>
+        <section>
+            <h2 class="subtitle">Example: </h2>
+            <h2>Display</h2>
+            <div class="block">Block</div>
+
+            <span class="inline">Inline</span>
+            <span class="inline">Inline</span>
+
+            <div class="none">Este no se verá</div>
+
+            <div class="flex">
+                <div>Flex 1</div>
+                <div>Flex 2</div>
+                <div>Flex 3</div>
+            </div>
+
+            <div class="grid">
+                <div>Grid 1</div>
+                <div>Grid 2</div>
+                <div>Grid 3</div>
+            </div>
+
+
+            <h2>Visibility</h2>
+
+            <div class="visible">Visible</div>
+
+            <div class="hidden">Hidden</div>
+
+
+            <h2>Overflow</h2>
+
+            <div class="overflow">
+                Este texto es demasiado largo para el tamaño de esta caja.
+            </div>
+
+
+            <h2>Z-Index</h2>
+
+            <div class="caja azul">Z-index 1</div>
+            <div class="caja roja">Z-index 2</div>
+        </section>
+    </main>
+</body>

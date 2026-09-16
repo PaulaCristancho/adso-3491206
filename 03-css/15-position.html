@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-position</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        section {
+            div {
+                border: 2px solid rgb(178, 99, 200);
+                height: 480px;
+                margin: 1rem auto;
+                width: 360px;
+                &.b01 {
+                    background-image: url(imgs/mario.png);
+                    position: sticky;
+                    top: 0%;
+                    background-color: rgb(23, 90, 138);
+                    background-repeat: no-repeat;
+                    background-size: 400px;
+                    background-position: center;
+                }
+                &.b02 {
+                    background-image: url(imgs/mario.png);
+                    position: relative;
+                    background-repeat: no-repeat;
+                    background-size: 500px;
+                    background-position: center;
+                }
+                &.b03 {
+                    background-image: url(imgs/mario.png);
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    background-size: 400px;
+                    background-position: center;
+                }
+                &.b04 {
+                    background-image: url(imgs/mario.png);
+                    position: fixed;
+                    background-repeat: no-repeat;
+                    background-size: 400px;
+                    background-position: center;
+                    right: 20px;
+                    bottom: 20px;
+                    background-color: rgb(144, 219, 238);
+                }
+                &.b05 {
+                    background-image: url(imgs/mario.png);
+                    position: static;
+                    background-repeat: no-repeat;
+                    background-size: 400px;
+                    background-position: center;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>15-position</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>La posicion de las cosas</h3>
+            <ul>
+                <li>Normal/Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </header>
+        <section>
+            <h2 class="subtitle">sticky: </h2>
+                <div class="b01"></div>
+            <h2 class="subtitle">Relative: </h2>
+                <div class="b02"></div>
+            <h2 class="subtitle">Absolute: </h2>
+                <div class="b03"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate blanditiis molestiae quo maiores ab quidem adipisci soluta obcaecati ex quia esst nostrum ullam consequuntur exercitationem, iusto voluptatem modi. Quas sunt blanditiis repellat soluta ut commodi quaerat explicabo, quia dignissimos vero aspernatur debitis dicta, temporibus ducimus earum odit tempora obcaecati reiciendis cum sit eum consectetur aliquid nemo. Ab iure, atque adipisci repellendus ipsa possimus nobis. Tempora sit explicabo, minima voluptatem esse veritatis temporibus laboriosam eius! Autem nam dicta reiciendis soluta, facilis repellat dolorem? Enim, impedit quisquam nihil, eveniet velit, sapiente labore atque quidem optio repellat facere molestiae architecto. Excepturi dolorum ex, et reprehenderit mollitia necessitatibus sunt in, voluptatibus suscipit sapiente quis tempora earum illum blanditiis omnis recusandae exercitationem soluta velit?</p>
+            <h2 class="subtitle">Fixed: </h2>
+                <div class="b04"></div>
+                <p>EL MARIO AL LADO DERECHO CON FONDO AZUL</p>
+            <h2 class="subtitle">Normal/Static: </h2>
+                <div class="b05"></div>
+        </section>
+    </main>
+</body>
