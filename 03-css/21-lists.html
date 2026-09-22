@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 - Lists</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        section {
+            ul {
+                li {
+                    list-style:square;
+                    li {
+                        list-style:disc;
+                    }
+                    }
+            }
+            ol {
+                li {
+                    list-style:lower-greek;
+                    li {
+                        list-style:lower-alpha;
+                    }
+                }
+            }
+            ul.images {
+                
+                li {
+                    list-style-image: url('imgs/basketball.png');
+                    
+                };
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>21 - Lists</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>Permite configurar todas las propiedades de estilo de la lista a la vez.</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Example: </h2>
+            <h2 class="subtitle">Unordered List</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>
+                    JavaScript
+                    <ul>
+                        <li>React JS</li>
+                        <li>Vue JS</li>
+                        <li>Angular JS</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 class="subtitle">Ordered List</h2>
+            <ol>
+                <li>
+                    Goku
+                    <ol>
+                        <li>Gohan</li>
+                        <li>Goten</li>
+                    </ol>
+                </li>
+                <li>
+                    Vegeta
+                    <ol>
+                        <li>Trunks</li>
+                        <li>Brah</li>
+                    </ol>
+                </li>
+                <li>Krillin</li>
+                <li>Yayirobe</li>
+            </ol>
+            <h3>Image List</h3>
+            <ul class="images">
+                <li>Hanamichi Sakuragi</li>
+                <li>Haruko Akagi</li>
+                <li>Ryota Miyagi</li>
+                <li>Kaeda Rukawa</li>
+            </ul>
+        </section>
+    </main>
+</body>

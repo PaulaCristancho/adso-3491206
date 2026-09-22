@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-challenge-layout</title>
+    <style>
+        body {
+            margin: 0;
+            border: 10px solid white;
+            background-color: #16A153;
+            min-height: 100vh;
+            main {
+                header {
+                    figure.logo {
+                        background-image: url('imgs/spriteweb.png');
+                        background-position: -25px -420px;
+                        width: 160px;
+                        margin: 2rem auto;
+                        height: 140px;
+                    }
+                }
+            }
+        }
+        .bot {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            a {
+                text-decoration: none;
+                color: white;
+                background-color: #00000067;
+                padding: 1rem 1rem;
+                border-top: 3px solid white;
+            }
+            a:hover  {
+                background-color: #000000;
+                border-top: 3px solid rgb(238, 255, 0);
+                
+            }
+        }
+        .caf {
+            background-color: #00000067;
+            margin: 2rem auto;
+            width: 70%;
+            height: 250px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+            <div class="bot">
+                <a href="">Inicio</a>
+                <a href="">Nosotros</a>
+                <a href="">Portafolio</a>
+                <a href="">Servicios</a>
+                <a href="">Contacto</a>
+            </div>
+            <div class="caf" >
+                <a href="">Sprite01</a> 
+                <a href="">Sprite02</a>
+                <a href="">Sprite03</a>
+            </div>
+        </header>
+    </main>
+</body>
+</html>
