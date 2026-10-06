@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26-border-radius</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        section {
+            div {
+                border: 4px solid #fff;
+                height: 150px;
+                background-color: blueviolet;
+                margin: 0 auto;
+                width: 150px;
+                &.bradius1 {
+                    border-radius: 50%;
+                }
+                &.bradius2 {
+                    border-radius: 40px 0;
+                }
+                &.bradius3 {
+                    border-radius: 140px 0 0 140px;
+                }
+                &.bradius4 {
+                    border-radius: 140px 0 140px 140px;
+                }
+                &.bradius5 {
+                    border-radius: 80%;
+                    corner-shape: squircle;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>26-border-radius</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>La propiedad define el radio de las esquinas del elemento.</h3>
+        </header>
+    <section>
+        <h2 class="subtitle">border-radius: 50%</h2>
+        <div class="bradius1"></div>
+        <h2 class="subtitle">border-radius: 40px 0</h2>
+        <div class="bradius2"></div>
+        <h2 class="subtitle">border-radius: 140px 0 0 140px</h2>
+        <div class="bradius3"></div>
+        <h2 class="subtitle">border-radius: 140px 0 140px 140px</h2>
+        <div class="bradius4"></div>
+        <h2 class="subtitle">corner-shape: squircle</h2>
+        <div class="bradius5"></div>
+    </section>
+</body>

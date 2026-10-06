@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28-challenge-shadow</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        figure.frame {
+            background-color: aliceblue;
+            height: calc(40 * 20);
+            width: calc(40 * 20);
+            margin: 2rem auto;
+            zoom: 0.50;
+            transition: all 0.4s ease-in ;
+            &:hover {
+                transform: scale(1.4);
+            }
+        }
+        div.squares {
+            background: url(imgs/square\ \(1\).png);
+            opacity: 0.4;
+            z-index: 2;
+            margin-top: -20px;
+            height: calc(40 * 20px);
+        }
+        div.batman{
+            background-color: #9ba9eb;
+            height: 20px;
+            width: 20px;
+            box-shadow: 20px 0px 0 0 #9ba9eb,
+                        40px 0px 0 0 #9ba9eb,
+                        60px 0px 0 0 #9ba9eb,
+                        80px 0px 0 0 #9ba9eb,
+                        100px 0px 0 0 #9ba9eb,
+                        120px 0px 0 0 #9ba9eb,
+                        140px 0px 0 0 #9ba9eb,
+                        160px 0px 0 0 #9ba9eb,
+                        180px 0px 0 0 #9ba9eb,
+                        200px 0px 0 0 #9ba9eb,
+                        220px 0px 0 0 #9ba9eb,
+                        240px 0px 0 0 #9ba9eb,
+                        260px 0px 0 0 #9ba9eb,
+                        280px 0px 0 0 #9ba9eb,
+                        300px 0px 0 0 #9ba9eb,
+                        320px 0px 0 0 #9ba9eb,
+                        340px 0px 0 0 #9ba9eb,
+                        360px 0px 0 0 #9ba9eb,
+                        380px 0px 0 0 #9ba9eb,
+                        400px 0px 0 0 #9ba9eb,
+                        420px 0px 0 0 #9ba9eb,
+                        440px 0px 0 0 #9ba9eb,
+                        460px 0px 0 0 #9ba9eb,
+                        480px 0px 0 0 #9ba9eb,
+                        500px 0px 0 0 #9ba9eb,
+                        520px 0px 0 0 #9ba9eb,
+                        540px 0px 0 0 #9ba9eb,
+                        560px 0px 0 0 #9ba9eb
+                        580px 0px 0 0 #9ba9eb,
+                        600px 0px 0 0 #9ba9eb,
+                        0px 0px 0 0 #9ba9eb,
+                        80px 0px 0 0 #9ba9eb,
+                        100px 0px 0 0 #9ba9eb,
+                        120px 0px 0 0 #9ba9eb,
+                        140px 0px 0 0 #9ba9eb,
+                        160px 0px 0 0 #9ba9eb,
+                        180px 0px 0 0 #9ba9eb,;
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>28-challenge-shadow</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>Pixel Art (Batman).</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Example: </h2>
+            <figure class="frame">
+                <div class="batman"></div>
+                <div class="squares"></div>
+            </figure>
+            </div>
+        </section>
+    </main>
+</body>
