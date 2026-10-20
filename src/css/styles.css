@@ -34,6 +34,13 @@ body {
 &.css {
     background: linear-gradient(46deg, #150714,#663399);
     background-attachment: fixed;
+    section {
+                    h2.subtitle {
+                        color: #790fa3;
+                        border-bottom: 2px dotted #790fa3;
+                        padding-bottom: 0.4rem;
+                    }
+                }
     
 }
     &.emmet {

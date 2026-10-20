@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-text-shadow</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        section {
+            p {
+                text-align: center;
+                font-size: 3.6rem;
+
+                &.txt1 {
+                    /*x y blur color*/
+                    text-shadow: 0px 0px 12px lime;
+                }
+                &.txt2 {
+                    text-shadow: -8px -8px 8px yellow;
+                }
+                &.txt3 {
+                    text-shadow: 0 1px 0 #ccc, 
+                    0 2px 0 #c9c9c9,
+                    0 3px 0 #bbb,
+                    0 4px 0 #b9b9b9,
+                    0 5px 0 #aaa,
+                    0 6px 1px rgba(0,0,0,.1),
+                    0 0 5px rgba(0,0,0,.1),
+                    0 1px 3px rgba(0,0,0,.3),
+                    0 3px 5px rgba(0,0,0,.2),
+                    0 5px 10px rgba(0,0,0,.25),
+                    0 10px 10px rgba(0,0,0,.2),
+                    0 20px 20px rgba(0,0,0,.15);
+
+                }
+                &.txt4 {
+                    text-shadow: -5px 0 0 yellow,
+                                -10px 0 0 green;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>30-text-shadow</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>Propiedad que añade efectos de sombra directamente al texto, aceptando valores de desplazamiento, radio de desenfoque y color.</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Examples:</h2>
+            <p class="txt txt1">ADSO</p>
+            <p class="txt txt2">C.P.I.C</p>
+            <p class="txt txt3">SENA</p>
+            <p class="txt txt4">Caldas</p>
+        </section>
+    </main>
+</body>
