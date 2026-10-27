@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37-animations</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        section {
+            div.jungle {
+                background: url(imgs/jungle.png)
+                            no-repeat center top /contain;
+                height: 460px;
+                margin: 0.4rem auto;
+                position: relative;
+                width: 380px;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+
+                    &.logo {
+                        top: 30px;
+                        left: 30px;
+                        animation: 2s animlogo infinite ease;
+                    }
+                    &.dk {
+                        top: 180px;
+                        left: 120px;
+                        width: 140px;
+                        animation: 2s animdk infinite linear;
+                    }
+                }
+                div.move {
+                    position: absolute;
+                    left: -140px;
+                    bottom: 150px;
+                    width: 120px;
+                    animation: 4s animmove infinite linear;
+                    img.ryno {
+                        width: 120px;
+                        animation: 0.2s animryno infinite ease;
+                    }
+                }
+            }
+        }
+        @keyframes animlogo {
+            0%,100% { transform: scale(0.8);}
+            50% { transform: scale(1.2);}
+        }
+        @keyframes animdk {
+            0% { transform: RotateY(0deg) translatey(0px);}
+            25% { transform:RotateY(0deg) translatey(-80px);}
+            50% { transform:RotateY(180deg) translatey(-80px);}
+            75% { transform:RotateY(0deg) translatey(-80px);}
+            0% { transform:RotateY(0deg) translatey(0px);}
+        }
+        @keyframes animryno {
+            0%, 100% { transform: translateY(0px)}
+            50% { transform: translateY(-4px);}
+        }
+        @keyframes animmove {
+            0% { transform:RotateY(0deg); bottom: 150px; left: -140px; }
+            25% { transform:RotateY(0deg); bottom: 150px; left: 120px ;}
+            26% { transform:RotateY(0deg); bottom: 220px; left: 120px ;}
+            27% { transform:RotateY(0deg); bottom: 150px; left: 120px ;}
+            50% { transform:RotateY(0deg); bottom: 150px; left: 400px ;}
+            51% { transform:RotateY(-180deg); bottom: 150px; left: 400; }
+            52% { transform:RotateY(-180deg); bottom: 150px; left: 400;}
+            60% { transform:RotateY(-180deg); bottom: 150px; left: 120px ;}
+            61% { transform:RotateY(-180deg); bottom: 220px; left: 120px ;}
+            62% { transform:RotateY(-180deg); bottom: 150px; left: 120px ;}
+            99% { transform:RotateY(-180deg); bottom: 150px; left: -140px;}
+            100% { transform:RotateY(0deg); bottom: 150px; left: -140px;}
+            
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>37-animations</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>Funcionalidad que utiliza @keyframes para crear secuencias de animación complejas paso a paso sin depender de JavaScript.</h3>
+        </header>
+        <section>
+            <div class="jungle">
+                <img src="imgs/logo-dk.png" class="logo">
+                <img src="imgs/dk.png" class="dk">
+                <div class="move">
+                    <img src="imgs/ryno.png" class="ryno">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
