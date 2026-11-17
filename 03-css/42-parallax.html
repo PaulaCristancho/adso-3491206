@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42-parallax</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        body{
+            section{
+                div.parallax {
+                    border: 2px solid #fff;
+                    border-radius: 12px;
+                    corner-shape: squircle;
+                    margin: 0 auto;
+                    position: relative;
+                    overflow: hidden;
+                    width: 360px;
+                    height: 576px;
+
+                    div.layer8, div.layer7,
+                    div.layer6, div.layer5,
+                    div.layer4, div.layer3,
+                    div.layer2, div.layer1 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 576px;
+                        width: 1024px;
+                    }
+
+                    div.layer8 {
+                        background: url(imgs/parallax/layer_08.png) repeat-x;
+                    }
+                    div.layer7 {
+                        background: url(imgs/parallax/layer_07.png) repeat-x;
+                        animation: 40s animlayer linear infinite;
+                    }
+                    div.layer6 {
+                        background: url(imgs/parallax/layer_06.png) repeat-x;
+                        animation: 35s animlayer linear infinite;
+                    }
+                    div.layer5 {
+                        background: url(imgs/parallax/layer_05.png) repeat-x;
+                        animation: 30s animlayer linear infinite;
+                    }
+                    div.layer4 {
+                        background: url(imgs/parallax/layer_04.png) repeat-x;
+                        animation: 25s animlayer linear infinite;
+                    }
+                    div.layer3 {
+                        background: url(imgs/parallax/layer_03.png) repeat-x;
+                        animation: 20s animlayer linear infinite;
+                    }
+                    div.layer2 {
+                        background: url(imgs/parallax/layer_02.png) repeat-x;
+                        animation: 10s animlayer linear infinite;
+                    }
+                    div.layer1 {
+                        background: url(imgs/parallax/layer_01.png) repeat-x;
+                        animation: 5s animlayer linear infinite;
+                    }
+                    div.runner {
+                        background: url(imgs/parallax/running.gif) no-repeat center / cover;
+                        position: absolute;
+                        bottom: 4rem;
+                        left: 50%;
+                        transform: translateX(-50%) scale(.8);
+                        height: 200px;
+                        width: 200px;
+
+                    }
+                }
+            }
+        }
+@keyframes animlayer {
+    100% {background-position: -1024px;}
+}
+@media ( min-width: 1024px ) {
+    
+    body {
+        width: 100%;
+        main {
+            width: 80%;
+            section {
+                width: 90%;
+                div.parallax {
+                    width: 1024px;
+                }
+            }
+        }
+    }
+}
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256"><path d="M232,56A104.11,104.11,0,0,1,128,160H88v40a8,8,0,0,1-13.66,5.66l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,88,104v40h40a88.1,88.1,0,0,0,88-88,8,8,0,0,1,16,0Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>42-parallax</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>Técnica visual donde el fondo se mueve a una velocidad diferente que el contenido en primer plano al desplazarse, creando un efecto de profundidad.
+
+43-flexbox</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Example: </h2>
+            <div class="parallax">
+                <div class="layer8"></div>
+                <div class="layer7"></div>
+                <div class="layer6"></div>
+                <div class="layer5"></div>
+                <div class="layer4"></div>
+                <div class="layer3"></div>
+                <div class="layer2"></div>
+                <div class="layer1"></div>
+                <div class="runner"></div>
+            </div>
+
+        </section>
+    </main>
+</body>
